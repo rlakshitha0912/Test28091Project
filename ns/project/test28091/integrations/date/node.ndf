@@ -46,7 +46,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">localdev</value>
-    <value name="lastModifiedDate">1695882511918</value>
+    <value name="lastModifiedDate">1695883352937</value>
     <record name="edgeServer" javaclass="com.wm.util.Values">
       <value name="id">default</value>
       <value name="group">default</value>
@@ -65,8 +65,8 @@
         </record>
         <record name="serviceName" javaclass="com.wm.util.Values">
           <value name="transformerSupport">true</value>
-          <value name="displayName">compareDates</value>
-          <value name="serviceName">pub.date:compareDates</value>
+          <value name="displayName">getCurrentDate</value>
+          <value name="serviceName">pub.date:getCurrentDate</value>
         </record>
         <Boolean name="serviceReferenceResolved">true</Boolean>
         <null name="outputMapSet"/>
