@@ -10,6 +10,14 @@ services:
   packages:
   - name: Test28091Project
     version: "1.0"
+- serviceName: project.test28091.integrations:date
+  packages:
+  - name: Test28091Project
+    version: "1.0"
+- serviceName: pub.date:getCurrentDate
+  packages:
+  - name: WmPublic
+    version: 11.0.0.0.544
 configurationVariables:
   ? artConnection.Test28091Project.project.test28091.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.testAcct1.connectionSettings.transactionType
   : NO_TRANSACTION
