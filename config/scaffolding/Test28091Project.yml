@@ -1,6 +1,62 @@
 version: "1.0"
 info:
   model: int-scaffold
+services:
+- serviceName: project.test28091.integrations:testdb
+  packages:
+  - name: Test28091Project
+    version: "1.0"
+- serviceName: edge.test28091.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:test
+  packages:
+  - name: Test28091Project
+    version: "1.0"
+configurationVariables:
+  ? artConnection.Test28091Project.project.test28091.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.testAcct1.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.Test28091Project.project.test28091.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.testAcct1.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.Test28091Project.project.test28091.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.testAcct1.connectionEnabled
+  : "false"
+  ? artConnection.Test28091Project.project.test28091.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.testAcct1.connectionSettings.user
+  : JDBC_BVT
+  ? artConnection.Test28091Project.project.test28091.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.testAcct1.connectionSettings.otherProperties
+  : loginTimeout=60;
+  ? artConnection.Test28091Project.project.test28091.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.testAcct1.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.Test28091Project.project.test28091.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.testAcct1.connectionSettings.trustStore
+  : ""
+  ? artConnection.Test28091Project.project.test28091.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.testAcct1.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.Test28091Project.project.test28091.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.testAcct1.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.oracle.OracleDataSource
+  ? artConnection.Test28091Project.project.test28091.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.testAcct1.connectionSettings.driverType
+  : Progress® DataDirect®
+  ? artConnection.Test28091Project.project.test28091.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.testAcct1.connectionSettings.databaseName
+  : ORCL
+  ? artConnection.Test28091Project.project.test28091.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.testAcct1.connectionSettings.dbType
+  : ORACLE
+  ? artConnection.Test28091Project.project.test28091.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.testAcct1.connectionSettings.portNumber
+  : "1521"
+  ? artConnection.Test28091Project.project.test28091.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.testAcct1.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.Test28091Project.project.test28091.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.testAcct1.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.Test28091Project.project.test28091.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.testAcct1.connectionSettings.password
+  : "{AES}gOk3wygfWVjWqDc4SLehnQ=="
+  ? artConnection.Test28091Project.project.test28091.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.testAcct1.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.Test28091Project.project.test28091.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.testAcct1.connectionSettings.keyStore
+  : ""
+  ? artConnection.Test28091Project.project.test28091.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.testAcct1.connectionSettings.networkProtocol
+  : tcp
+  ? artConnection.Test28091Project.project.test28091.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.testAcct1.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.Test28091Project.project.test28091.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.testAcct1.connectionManagerSettings.minimumPoolSize
+  : "0"
+  ? artConnection.Test28091Project.project.test28091.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.testAcct1.connectionSettings.serverName
+  : adapter-oracle-121-on-amazonrds.cdmjexwbzoym.us-east-1.rds.amazonaws.com
+  ? artConnection.Test28091Project.project.test28091.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.testAcct1.connectionManagerSettings.expireTimeout
+  : "1000"
 packages:
 - name: Test28091Project
   gitServerName: testEdgeProjects
