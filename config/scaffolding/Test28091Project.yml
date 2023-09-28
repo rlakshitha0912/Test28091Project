@@ -18,6 +18,10 @@ services:
   packages:
   - name: WmPublic
     version: 11.0.0.0.544
+- serviceName: pub.date:compareDates
+  packages:
+  - name: WmPublic
+    version: 11.0.0.0.544
 configurationVariables:
   ? artConnection.Test28091Project.project.test28091.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.testAcct1.connectionSettings.transactionType
   : NO_TRANSACTION
